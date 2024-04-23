@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@import 'grid/init';
+
+html,body{
+    margin: 0;
+    font-size: 22px;
+
+}
+
+
+
+.blok{
+  padding: 20px;
+  background-color: gray;
+  border: solid 1px #aaa;
+  text-align: center;
+  height: 100px;
+}
+
+.container{
+  
+  background-color: #ffffff;
+  padding-bottom: 30px;
+  border:solid 1px;
+  @include container;
+  max-width: 1540px;
+  
+}
+
+.row{
+  @include row;
+  padding-bottom: 15px;
+}
+
+.header{
+  background-color: aquamarine;
+  font-size: 250%;
+  text-align: center;
+  @include bp(lg){
+    font-size: 150%;
+  }
+  &__1{
+      margin-top: 15px;
+      background-color: rgb(255, 57, 57);
+      @include col(12);
+  }
+  &__2{
+    &__1{
+      background-color: rgb(33, 224, 145);
+      @include col(4);
+    }
+    &__2{
+      background-color: rgb(33, 224, 145);
+      @include col(8);
+    }
+  }
+  &__3{
+    background-color: rgb(37, 77, 211);
+    @include col(12);
+  }    
+}
+.main{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 250%;
+  background-color: #cacaca;
+  @include bp(lg){
+    font-size: 150%;
+  }
+  &__row{
+    margin-top: 15px;
+    background-color: rgb(106, 111, 126);
+    @include col(12);
+  }        
+}
+
+.footer{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 250%;
+  background-color: #252424;
+  @include bp(lg){
+    font-size: 150%;
+  }
+  &__row{
+    margin-top: 15px;
+    background-color: rgb(211, 214, 51);
+    @include col(12);
+  }        
+}
