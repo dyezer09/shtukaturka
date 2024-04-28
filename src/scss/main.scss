@@ -8,66 +8,120 @@
 html,body{
     margin: 0;
     font-size: 22px;
-
+    background-color:antiquewhite;
 }
 
 
 
-.blok{
-  padding: 20px;
-  background-color: gray;
-  border: solid 1px #aaa;
-  text-align: center;
-  height: 100px;
-}
-
-.container{
-  
-  background-color: #ffffff;
-  padding-bottom: 30px;
-  border:solid 1px;
+.container{ 
+  //border:solid 1px;
   @include container;
-  max-width: 1540px;
+  max-width: none;
   
 }
 
 .row{
+  margin-top: 15px;
   @include row;
   padding-bottom: 15px;
 }
 
+
+
+h6{
+  text-align: center;
+  margin: 0%;
+  margin-top: 15px;
+}
+h5{
+  color: rgb(224, 143, 22);
+  margin: 0%;
+  margin-bottom: 15px;
+}
+
+
+span{
+  box-sizing: border-box;
+  margin-right: 1rem !important;
+}
+.text-uppercase {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-transform: uppercase !important;
+}
+a{
+  color: #ece4e4;
+  text-decoration: none;
+}
+.nav{
+  background-color: #252424;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+
+
 .header{
-  background-color: aquamarine;
-  font-size: 250%;
+  background-color: antiquewhite;
+  font-size: 150%;
   text-align: center;
   @include bp(lg){
-    font-size: 150%;
+    font-size: 100%;
   }
-  &__1{
-      margin-top: 15px;
-      background-color: rgb(255, 57, 57);
-      @include col(12);
+  &__email{
+      text-align: center;
+      @include col(4);
+      @include bp(lg){
+        font-size: 80%;
+      }
   }
-  &__2{
-    &__1{
-      background-color: rgb(33, 224, 145);
+  &__logo{
+    background-color: rgb(224, 143, 22);
+    padding-bottom: 15px;
+    @include col(4);
+  }
+  &__call{
+    @include bp(lg){
+      font-size: 80%;
+    }
+    text-align: center;
+    @include col(4);
+  }
+
+
+  &__nav{
+   
+    &__home{
       @include col(4);
     }
-    &__2{
-      background-color: rgb(33, 224, 145);
-      @include col(8);
+    &__about{
+      @include col(4);
     }
+    &__contact{
+      @include col(4);
+    }
+  }  
+  &__but{
+    background-color: rgb(224, 143, 22);
+    margin-top: 15px;
+    width: 125px;
+    height: 70px;
+    margin-bottom: 15px;
   }
-  &__3{
-    background-color: rgb(37, 77, 211);
-    @include col(12);
-  }    
 }
+
+
+
+
+
+
 .main{
-  margin-top: 15px;
   text-align: center;
-  font-size: 250%;
-  background-color: #cacaca;
+  font-size: 200%;
+  background-color: antiquewhite;
   @include bp(lg){
     font-size: 150%;
   }
@@ -78,17 +132,34 @@ html,body{
   }        
 }
 
+
+
+
+
+
 .footer{
-  margin-top: 15px;
+  color: #ece4e4;
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   background-color: #252424;
   @include bp(lg){
     font-size: 150%;
   }
-  &__row{
+  &__contact{
+    margin-top: 15px;  
+    @include col(6);
+  }
+  &__links{
     margin-top: 15px;
-    background-color: rgb(211, 214, 51);
+    @include col(6);
+  }
+  &__text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #ece4e4;
+    margin-top: -15px;
+    background-color: black;
     @include col(12);
-  }        
+  }
 }

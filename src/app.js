@@ -6,6 +6,8 @@ import { engine } from 'express-handlebars';
 
 //console.log("132")
 
+
+
 const port = 5500;
 const app = express();
 
@@ -35,7 +37,7 @@ app.engine('.hbs', engine({
 
   app.get("/", (req, res) => {
 	
-	res.render("pages/home", { layout: "main"});
+	res.render("pages/index", { layout: "main"});
   });
 
 
