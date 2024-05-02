@@ -23,6 +23,9 @@
     padding-right: $grid-gap-side;
 
 }
+
+
+
 @mixin row{
   display: flex;
   flex-wrap: wrap;

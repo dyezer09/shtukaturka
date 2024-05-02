@@ -432,6 +432,22 @@ a {
     font-size: 80%;
   }
 }
+.header__nav {
+  display: none;
+  background-color: #252424;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .header__nav > * {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .header__nav__home {
   flex: 0 0 auto;
   width: calc(33.3333333333% - 30px);
@@ -443,6 +459,36 @@ a {
 .header__nav__contact {
   flex: 0 0 auto;
   width: calc(33.3333333333% - 30px);
+}
+.header__navbar {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+}
+.header__navbar__navbarButton {
+  color: #ece4e4;
+  font-size: 60%;
+  height: 50px;
+  flex: 0 0 auto;
+  width: calc(100% - 30px);
+  background-color: #252424;
+}
+.header__navbar__barRow {
+  display: none;
+}
+.header__navbar__barel {
+  margin-left: 17px;
+  background-color: #252424;
+  color: #ece4e4;
+  margin-top: 15px;
+  flex: 0 0 auto;
+  width: calc(100% - 30px);
 }
 .header__but {
   cursor: pointer;
