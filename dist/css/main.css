@@ -326,6 +326,11 @@
     width: calc(100% - 30px);
   }
 }
+/*@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins/breakpoints';
+@import '../../../node_modules/bootstrap/scss/mixins/container';
+@import '../../../node_modules/bootstrap/scss/mixins/grid';
+@import '../../../node_modules/bootstrap/scss/functions';*/
 html, body {
   margin: 0;
   font-size: 22px;
@@ -333,11 +338,12 @@ html, body {
 }
 
 .container {
+  margin: 0%;
   margin: 0 auto;
   max-width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: none;
+  max-width: 1400px;
 }
 
 .row {
@@ -392,7 +398,7 @@ a {
 
 .header {
   background-color: antiquewhite;
-  font-size: 150%;
+  font-size: 250%;
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -439,6 +445,7 @@ a {
   width: calc(33.3333333333% - 30px);
 }
 .header__but {
+  cursor: pointer;
   background-color: rgb(224, 143, 22);
   margin-top: 15px;
   width: 125px;
@@ -485,14 +492,62 @@ a {
   width: calc(50% - 30px);
 }
 .footer__text {
-  padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
   color: #ece4e4;
   margin-top: -15px;
   background-color: black;
   flex: 0 0 auto;
   width: calc(100% - 30px);
+}
+
+.win {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 800px;
+  height: 330px;
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  background-color: #272524;
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+}
+.win__text {
+  margin-top: 15px;
+  text-align: center;
+  color: #ece4e4;
+  flex: 0 0 auto;
+  width: calc(100% - 30px);
+}
+.win__form {
+  cursor: pointer;
+  margin-top: 25px;
+  text-align: center;
+  color: #ece4e4;
+  flex: 0 0 auto;
+  width: calc(100% - 30px);
+  background-color: grey;
+  height: 50px;
+}
+.win__close {
+  background-color: #2e2b26;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 760px;
+}
+.win__send {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: grey;
+  border: 2px solid;
+  border-color: red;
+  margin-left: 305px;
 }
 
 /*# sourceMappingURL=main.css.map */

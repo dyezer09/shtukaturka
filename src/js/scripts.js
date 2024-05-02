@@ -1,7 +1,9 @@
 const buttonId =  document.getElementById("bt");
-
+const textId =  document.getElementById("txt");
 
 buttonId.addEventListener("click", () => {
-    popup.style.display = "block";
-    overlay.classList.add("show");
+    win.style.display = "block";
+  });
+  textId.addEventListener("click", () => {
+    txt.value = "";
   });

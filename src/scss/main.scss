@@ -13,10 +13,14 @@ html,body{
 
 
 
+
+
+
 .container{ 
   //border:solid 1px;
+  margin: 0%;
   @include container;
-  max-width: none;
+  max-width: 1400px;
   
 }
 
@@ -66,9 +70,10 @@ a{
 
 .header{
   background-color: antiquewhite;
-  font-size: 150%;
+  font-size: 250%;
   text-align: center;
   @include bp(lg){
+    //background-color: #252424;
     font-size: 100%;
   }
   &__email{
@@ -105,6 +110,7 @@ a{
     }
   }  
   &__but{
+    cursor: pointer;
     background-color: rgb(224, 143, 22);
     margin-top: 15px;
     width: 125px;
@@ -154,12 +160,57 @@ a{
     @include col(6);
   }
   &__text{
-    padding-top: 15px;
-    padding-bottom: 15px;
     text-align: center;
     color: #ece4e4;
     margin-top: -15px;
     background-color: black;
     @include col(12);
+  }
+}
+
+
+
+.win {
+  @include container;
+  width: 800px;
+  height: 330px;
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  background-color: #272524;
+  opacity: .9;
+  transform: translate(-50%, -50%);
+  &__text{
+    margin-top: 15px;
+    text-align: center;
+    color: #ece4e4;
+    @include col(12);
+  }
+  &__form{
+    cursor: pointer;
+    margin-top: 25px;
+    text-align: center;
+    color: #ece4e4;
+    @include col(12);
+    background-color: grey;
+    height:50px;
+  }
+  &__close{
+    background-color: #2e2b26;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 760px;
+  }
+  &__send{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color:grey;
+    border: 2px solid;
+    border-color: red;
+    margin-left: 305px;
   }
 }

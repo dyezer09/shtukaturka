@@ -28,7 +28,7 @@ app.engine('.hbs', engine({
   }));
   app.set('view engine', 'hbs');
   app.set('views', path.resolve(__dirname, './views'));
-  app.use(express.static(path.join(__dirname, "../dist")))
+  app.use(express.static(path.join(__dirname, "../")))
 
 
 
